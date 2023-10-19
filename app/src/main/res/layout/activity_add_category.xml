@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+
+    <TextView
+        android:id="@+id/textViewPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Category Page"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textViewCategoryHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on a category you would like to start tracking:"
+        android:textSize="15sp"
+        android:textColor="@android:color/black" />
+
+  <!--  <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="8">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:padding="8dp"
+            android:background="@color/cardview_light_background">
+
+            <ImageButton
+                android:id="@+id/imageButton_cbd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/cbd_new" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:background="@color/cardview_light_background"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/imageButton_thc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/thc_new" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="8dp"
+            android:background="@color/cardview_light_background">
+
+            <ImageButton
+                android:id="@+id/imageButton_edibles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/edibles_new" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="8dp"
+            android:background="@color/cardview_light_background">
+
+            <ImageButton
+                android:id="@+id/imageButton_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/other_new" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:contentDescription="Next Page"
+        android:background="@drawable/baseline_arrow_forward_24" />
+
+
+</LinearLayout>

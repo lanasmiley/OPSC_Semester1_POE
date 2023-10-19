@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/backsplash"
+    tools:context=".Categories">
+
+
+    <TextView
+        android:id="@+id/selectedCategoriesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="Selected Categories:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCBDTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="CBD Submissions"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/btnCBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CBD"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvTHCTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="THC Submissions"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnTHC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THC"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvEdiblesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="Edibles Submissions"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnEdibles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edibles"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvOtherTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="Other Submissions"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonNext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/baseline_arrow_forward_24"
+
+        android:contentDescription="Next Page"
+        android:shadowColor="#FFFFFF"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        app:rippleColor="@color/white"
+        app:strokeColor="#FFFFFF" />
+</LinearLayout>

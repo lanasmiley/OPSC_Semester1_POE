@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/backsplash"
+        android:label="TrackSheet"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OPSC"
+        tools:targetApi="31">
+        <activity
+            android:name=".viewOther"
+            android:exported="false" />
+        <activity
+            android:name=".viewEdibles"
+            android:exported="false" />
+        <activity
+            android:name=".viewTHC"
+            android:exported="false" />
+        <activity
+            android:name=".viewCBD"
+            android:exported="false" />
+        <activity
+            android:name=".Achievements"
+            android:exported="false" />
+
+        <activity
+            android:name=".THC"
+            android:exported="false"
+            android:label="THC Activity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signInPage"
+            android:label="Sign In" />
+        <activity
+            android:name=".Delete"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteCategory"
+            android:exported="false" />
+        <activity
+            android:name=".AddCategory"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Achievements" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Other"
+            android:exported="false" />
+        <activity
+            android:name=".Edibles"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".THC" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".CBD"
+            android:exported="false" />
+        <activity
+            android:name=".SelectingCatergory"
+            android:exported="false" />
+        <activity
+            android:name=".registerPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Categories"
+            android:label="Category Page" />
+    </application>
+
+</manifest>
